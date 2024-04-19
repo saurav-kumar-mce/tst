@@ -1,1 +1,11 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ test-deployment ]
+
+jobs:
+
+                  - name: Find n.yaml
+                    run: find . -name "n.yaml" -print
 
